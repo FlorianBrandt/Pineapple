@@ -1,0 +1,88 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+@import 'http://fontawesome.io/assets/font-awesome/css/font-awesome.css';
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html header,
+body header {
+  height: 70px;
+  width: 100%;
+  background-color: #3f51b5;
+}
+html header div.branding,
+body header div.branding {
+  width: 300px;
+  height: 70px;
+  float: left;
+  text-align: center;
+  background-color: #303f9f;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+html header nav,
+body header nav {
+  width: calc(100% - 400px);
+  height: 70px;
+  padding: 0 50px;
+  float: right;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+html header nav ul,
+body header nav ul {
+  list-style-type: none;
+}
+html header nav ul li,
+body header nav ul li {
+  padding: 0 13px;
+  float: left;
+  display: block;
+}
+html header nav ul li a,
+body header nav ul li a {
+  line-height: 70px;
+  text-decoration: none;
+  color: #FFEEFF;
+  font-size: 20px;
+}
+html header nav ul li.right,
+body header nav ul li.right {
+  float: right;
+}
+html main,
+body main {
+  width: 100%;
+  position: absolute;
+  height: calc( 100% - 70px );
+  float: left;
+  background-color: #FEFEFE;
+}
+@keyframes fa-blink {
+  0% {
+    opacity: 1;
+    font-size: 25px;
+  }
+  50% {
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 25px;
+  }
+}
+.fa-blink {
+  -webkit-animation: fa-blink 1s linear infinite;
+  -moz-animation: fa-blink 1s linear infinite;
+  -ms-animation: fa-blink 1s linear infinite;
+  -o-animation: fa-blink 1s linear infinite;
+  animation: fa-blink 1s linear infinite;
+}
